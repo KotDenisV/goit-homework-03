@@ -4,6 +4,54 @@ body {
   color: #434455;
 }
 
+a {
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.heder {
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-box {
+  display: flex;
+  align-items: center;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   color: #4d5ae5;
   text-transform: uppercase;
@@ -13,19 +61,27 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-right: 76px;
 }
 
 .header-span {
   color: #2e2f42;
 }
 
-.header-navigation {
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+
+.header-navigation-link {
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   text-decoration: none;
+  padding: 24px 0;
+  display: block;
 }
 
 .header-navigation:hover,
@@ -33,16 +89,14 @@ body {
   color: #404bbf;
 }
 
-.header-list {
-  list-style-type: none;
-}
-
 .header-adres {
   font-style: normal;
+  margin-left: auto;
 }
 
-.header-adres ul {
-  list-style-type: none;
+.header-adres-list {
+  display: flex;
+  gap: 40px;
 }
 
 .header-adres-link {
@@ -61,6 +115,13 @@ body {
 
 .main {
   background-color: #2e2f42;
+  padding-top: 188px;
+  padding-bottom: 192px;
+}
+
+.main-container {
+  /* display: flex;
+  align-items: center; */
 }
 
 .main-title {
@@ -70,12 +131,15 @@ body {
   letter-spacing: 0.02em;
   color: #fff;
   text-align: center;
+  width: 496px;
+  margin-bottom: 48px;
 }
 
 .main-button {
+  /* width: 105px; */
   cursor: pointer;
   background-color: #4d5ae5;
-  font-family: "Roboto", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
@@ -98,8 +162,22 @@ body {
   color: #2e2f42;
 }
 
-.advantages ul {
-  list-style-type: none;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.advantages {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .advantages-text {
@@ -118,6 +196,12 @@ body {
 
 .our-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.container-our-team {
+  margin-bottom: 72px;
 }
 
 .our-team-list {
