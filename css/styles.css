@@ -267,6 +267,7 @@ img {
   display: flex;
   align-items: center;
   gap: 24px;
+  flex-wrap: wrap;
 }
 
 .our-portfolio-img {
@@ -275,6 +276,7 @@ img {
 
 .our-portfolio-card {
   padding-top: 32px;
+  /* border-top: 1px solid #e7e9fc; */
   border-left: 1px solid #e7e9fc;
   border-right: 1px solid #e7e9fc;
   border-bottom: 1px solid #e7e9fc;
